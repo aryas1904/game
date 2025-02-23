@@ -69,14 +69,14 @@ const showWinner = (userWin,userChoice,compChoice) => {
         userScore++;
         userScorePara.innerText=userScore;
         console.log("you win");
-        msg.innerText = "You win! "+$(userChoice)+"beats"+$(compChoice);
+        msg.innerText = "You win! "+userChoice+"beats"+compChoice;
         msg.style.backgroundColor="green";
     }
     else {
         compScore++;
         compScorePara.innerText=compScore;
         console.log("you lose");
-        msg.innerText = "You lost!"+$(compChoice)+"beats"+$(userChoice);
+        msg.innerText = "You lost!"+compChoice+"beats"+userChoice;
         msg.style.backgroundColor="red";
 
     }
